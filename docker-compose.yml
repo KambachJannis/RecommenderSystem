@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  recommender-service:
+    build: ./python
+    volumes:
+      - ./python:/usr/src/app
+    ports:
+      - 81:80
+      
+  mysql:
+    image: mysql:5.6.40 
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpassword
+    ports:
+      - 82:3306    
+
+  website:
+    build: ./website
+    volumes:
+      - ./website:/var/www/html
+    ports:
+      - 80:80
+    depends_on:
+      - recommender-service
+      - mysql

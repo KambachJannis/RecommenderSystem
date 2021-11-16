@@ -1,0 +1,141 @@
+body
+{
+	font-family: Roboto, serif;
+	letter-spacing:.0625em
+}
+
+a
+{
+	color:#fff!important
+}
+a:focus, a:hover{
+	text-decoration:none!important;
+	color:#51e28d!important
+}
+
+.btn{
+	padding:1.25rem 2rem;
+	font-family: Roboto, serif;
+	font-size:80%;
+	text-transform:uppercase;
+	letter-spacing:.15rem;
+	border:0
+}
+.btn-primary{
+	background-color:#46ce7e
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+	background-color:#51e28d!important;
+	color:#fff!important;
+}
+
+#mainNav{
+	min-height:56px;
+	color:#fff;
+	background-color:#4c4c4c
+}
+#mainNav .navbar-toggler{
+	font-size:80%;
+	padding:.75rem;
+	color:#fff;
+	background-color:#51e28d;
+}
+#mainNav .navbar-toggler:focus{
+	outline:0
+}
+#mainNav .navbar-brand{
+	color:#fff;
+	font-weight:700;
+	padding:.9rem 0
+}
+#mainNav .navbar-brand:hover{
+	color:#fff!important;
+}
+#mainNav .navbar-nav .nav-item:hover{
+	color:#51e28d;
+	outline:0;
+	background-color:transparent
+}
+#mainNav .navbar-nav .nav-item:active,#mainNav .navbar-nav .nav-item:focus{
+	outline:0;
+	background-color:transparent
+}
+@media (min-width:992px){
+	#mainNav{
+		padding-top:0;
+		padding-bottom:0;
+		border-bottom:none;
+		background-color:transparent;
+		-webkit-transition:background-color .3s ease-in-out;
+		transition:background-color .3s ease-in-out
+	}
+	#mainNav .navbar-brand{
+		padding:.5rem 0;
+	}
+	#mainNav .nav-link{
+		-webkit-transition:none;
+		transition:none;
+		padding:2rem 1.5rem;
+		color:#fff;
+	}
+	#mainNav .nav-link:hover{
+		color:#51e28d
+	}
+	#mainNav .nav-link:active{
+		color:#51e28d
+	}
+	#mainNav.navbar-shrink .nav-link{
+		padding:1.5rem 1.5rem 1.25rem;
+		border-bottom:.25rem solid transparent
+	}
+	#mainNav.navbar-shrink .nav-link.active{
+		outline:0;
+		border-bottom:.25rem solid #64a19d
+	}
+}
+
+.masthead{
+	position:relative;
+	width:100%;
+	height:auto;
+	min-height:35rem;
+	padding:15rem 0;
+	background: url(../img/user_bg-min.jpg) no-repeat scroll center;
+	background-size:cover
+}
+
+.masthead h1{
+	font-family: Roboto, serif;
+	font-weight:bold;
+	font-size:2.5rem;
+	line-height:2.5rem;
+	letter-spacing:.8rem;
+	color:#fff;
+}
+.masthead h2{
+	max-width:20rem;
+	font-size:1rem;
+}
+
+@media(min-width:768px){
+	.masthead h1{
+		font-size:4rem;
+		line-height:4rem
+	}
+}
+
+@media(min-width:992px){
+	.masthead {
+		height:100vh;
+		padding:0
+	}
+	.masthead h1{
+		font-size:6.5rem;
+		line-height:6.5rem;
+		letter-spacing:.8rem
+	}
+	.masthead h2{
+		max-width:30rem;
+		font-size:1.25rem
+	}
+}
