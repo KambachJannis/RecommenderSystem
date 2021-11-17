@@ -12,4 +12,4 @@ This is an implementation of a simple content- and user-based recommender system
 ## Usage
 
 This repo as a whole is currently not in working state. Please refrain from trying to deploy this repo as-is, since the original database is missing.
-The individual Python-files in the recommeder-folder should be without issues if used in combination with another database.
+The individual Python-files in the recommender-folder should be without issues if used in combination with another database.
