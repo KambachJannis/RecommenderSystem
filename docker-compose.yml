@@ -2,9 +2,9 @@ version: '3'
 
 services:
   recommender-service:
-    build: ./python
+    build: ./recommender
     volumes:
-      - ./python:/usr/src/app
+      - ./recommender:/usr/src/app
     ports:
       - 81:80
       
@@ -16,9 +16,9 @@ services:
       - 82:3306    
 
   website:
-    build: ./website
+    build: ./interface
     volumes:
-      - ./website:/var/www/html
+      - ./interface:/var/www/html
     ports:
       - 80:80
     depends_on:
